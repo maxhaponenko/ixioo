@@ -16643,7 +16643,7 @@ h1, h2, h3, h4, h5, h6, p {
 .main_container h2, .main_container h3 {
   text-align: center;
   font-weight: 300;
-  font-size: 2em; }
+  font-size: 2.3em; }
 
 .main_container h4 {
   font-size: 2em; }
@@ -16657,7 +16657,7 @@ blockquote {
   border-left: 3px solid rgba(167, 255, 235, 0.5); }
 
 .how_it_works {
-  margin-top: 100px;
+  margin-top: 50px;
   position: relative; }
 
 .how_it_works button {
