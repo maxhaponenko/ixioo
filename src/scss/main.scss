@@ -1,21 +1,13 @@
-<<<<<<< HEAD
 @import "~bootstrap/scss/bootstrap";
 // @import "~materialize-css/dist/css/materialize";
 // @import "~bootstrap";
-=======
-// @import "~bootstrap/scss/bootstrap";
-@import "~materialize-css/dist/css/materialize";
->>>>>>> 99332c684985e29131698a3321c4eb871f09545f
 // @import '_reset.scss';
 @import '_sprites.scss';
 
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-<<<<<<< HEAD
 $color-white: #ffffff;
 
-=======
->>>>>>> 99332c684985e29131698a3321c4eb871f09545f
 
 body {
     display: flex;
@@ -33,7 +25,6 @@ nav {
     z-index: 100;
     background-color: rgba(255, 255, 255, 0.3);
     position: fixed;
-<<<<<<< HEAD
     width: 100%;
     height: 70px;
     ul {
@@ -50,14 +41,11 @@ nav {
     .nav-wrapper, .container {
         height: 100%;
     }
-=======
->>>>>>> 99332c684985e29131698a3321c4eb871f09545f
 }
 h1, h2, h3, h4, h5, h6, p {
     font-family: 'Quicksand', sans-serif;
     font-size: 14px;
 }
-<<<<<<< HEAD
 button.login {
     background-color: #26a69a;
     border-radius: 2px;
@@ -98,17 +86,10 @@ footer {
     background-repeat: repeat;
 }
 
-=======
-.page-footer {
-    z-index: 100;
-    background-color: rgba(255, 255, 255, 0.3);
-}
->>>>>>> 99332c684985e29131698a3321c4eb871f09545f
 .brand-logo {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-<<<<<<< HEAD
     font-size: 1.5rem;
     display: block;
     float: left;
@@ -118,12 +99,6 @@ footer {
 .brand-logo:hover {
     text-decoration: none;
     color: $color-white;
-=======
-    top: 1px;
-}
-.brand-logo:hover {
-    text-decoration: none;
->>>>>>> 99332c684985e29131698a3321c4eb871f09545f
 }
 .nav-wrapper button {
     margin-left: 15px;
@@ -134,23 +109,11 @@ footer {
     height: 100%;
     top: 5px;
 }
-<<<<<<< HEAD
-
-=======
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-}
->>>>>>> 99332c684985e29131698a3321c4eb871f09545f
 .main_container {
     z-index: 99;
     position: absolute;
     top: 55%;
     left: 50%;
-<<<<<<< HEAD
     transform: translate(-50%, -55%);
     color: white;
     h2, h3 {
@@ -214,28 +177,6 @@ main {
     // overflow: hidden;
 }
 
-
-
-
-
-=======
-    transform: translate(-50%, -50%);
-    color: white;
-}
-.main_container h2, .main_container h3{
-    text-align: center;
-    font-weight: 300;
-    font-size: 2.3em;
-}
-.main_container h4 {
-    font-size: 2em;
-}
-.main_container p {
-    font-size: 20px;
-    font-weight: 300;
-    font-size: 1em;
-}
->>>>>>> 99332c684985e29131698a3321c4eb871f09545f
 blockquote {
     border-left: 3px solid rgba(167,255,235, 0.5);
 }

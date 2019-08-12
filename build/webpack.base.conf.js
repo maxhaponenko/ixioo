@@ -10,10 +10,6 @@ const PATHS = {
 }
 
 module.exports = {
-<<<<<<< HEAD
-=======
-	
->>>>>>> 99332c684985e29131698a3321c4eb871f09545f
 	externals: {
 		paths: PATHS
 	},
@@ -24,11 +20,7 @@ module.exports = {
   output: {
     filename: `${PATHS.assets}js/[name].js`,
     path: PATHS.dist,
-<<<<<<< HEAD
     publicPath: '/'
-=======
-    publicPath: './'
->>>>>>> 99332c684985e29131698a3321c4eb871f09545f
   },
   module: {
     rules: [
@@ -89,12 +81,8 @@ module.exports = {
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
-<<<<<<< HEAD
 			filename: `${PATHS.assets}css/[name].css`,
 			// publicPath: '../../',
-=======
-			filename: `${PATHS.assets}css/[name].css`
->>>>>>> 99332c684985e29131698a3321c4eb871f09545f
 		}),
 		new HtmlWebpackPlugin({
 			hash: false,
