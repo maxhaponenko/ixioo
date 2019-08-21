@@ -8508,7 +8508,8 @@ main {
 
 nav {
   z-index: 100;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #2e3d41;
+  background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
   width: 100%;
   height: 70px;
@@ -8517,10 +8518,23 @@ nav {
   transition: background-color 0.5s ease; }
   nav ul {
     list-style-type: none;
+    display: block;
+    height: 100%;
     float: right; }
     nav ul li {
       display: inline-block;
-      padding: 19px 0px 0px 0px; }
+      height: 100%; }
+      nav ul li a {
+        display: block;
+        height: 100%;
+        padding: 18px 15px 0px 15px;
+        color: white;
+        font-size: 1.2rem;
+        text-decoration: none; }
+        nav ul li a:hover {
+          background-color: #26a69a;
+          text-decoration: none;
+          color: white; }
   nav .nav-wrapper, nav .container {
     height: 100%; }
 
@@ -8585,7 +8599,7 @@ a.learn_more {
   font-size: 1.5rem;
   display: block;
   float: left;
-  margin-top: 18px;
+  margin-top: 17px;
   color: #ffffff; }
 
 .brand-logo:hover {
@@ -8630,11 +8644,13 @@ a.learn_more {
 header {
   position: relative;
   height: 100vh;
-  width: 100%;
-  background-color: grey;
-  border-bottom: 1px solid white !important; }
+  width: 100%; }
   header video {
-    z-index: 80; }
+    left: 0;
+    top: 0;
+    position: fixed;
+    min-width: 100%;
+    z-index: -20; }
   header #videoDiv {
     width: 100%;
     height: 100vh;
@@ -8653,27 +8669,13 @@ header {
         -ms-flex-align: center;
             align-items: center; }
 
-.border-white {
-  position: relative; }
-  .border-white::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    pointer-events: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    z-index: 100; }
-
 main {
   position: relative; }
 
 #description {
   position: relative;
   width: 100%;
-  height: auto;
-  background-color: #ffffff !important; }
+  height: auto; }
 
 .heading {
   width: auto;
@@ -8681,44 +8683,55 @@ main {
   margin: 80px 0 60px 0;
   text-align: center; }
   .heading h2 {
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    color: white; }
 
 .product_card {
   width: auto;
   height: auto;
+  position: relative;
   margin-bottom: 55px;
-  border-radius: 5px;
   -webkit-box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
-          box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5); }
+          box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+  background-color: white; }
   .product_card .img-wrapper {
-    height: 100%;
-    width: 100%;
+    padding: 10px;
     overflow: hidden; }
-  .product_card img {
-    max-height: 250px; }
   .product_card h2 {
     font-size: 2rem;
-    padding: 25px 0 0 0; }
+    padding: 25px 0 0 20px; }
   .product_card p {
     font-size: 1.1rem;
-    padding: 0px 0 0 0; }
-  .product_card .status-box p {
-    position: relative;
-    color: #5699D2;
-    font-size: 1rem;
-    left: -3px;
-    text-align: center;
-    padding: 60px 0 0 0;
-    margin-bottom: 0px; }
+    padding: 0px 20px 0px 20px; }
+  .product_card .status-box {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 200px;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 0 10px 10px 0px; }
+    .product_card .status-box p {
+      position: relative;
+      color: #5699D2;
+      font-size: 1rem;
+      padding: 15px 0 0 0;
+      width: auto;
+      margin-bottom: 0px; }
+    .product_card .status-box svg {
+      margin-left: 10px;
+      width: 30%; }
+    .product_card .status-box .status-box__icon {
+      display: inline-block;
+      position: relative; }
 
 footer {
   z-index: 100;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   position: relative;
   margin-top: 120px;
   width: 100%;
   height: 300px;
-  background-color: #171717;
   color: white; }
   footer a, footer p, footer li {
     color: white; }
@@ -8732,5 +8745,27 @@ footer {
           text-decoration: none;
           border-bottom: 2px solid #c5c5c5;
           color: #c5c5c5; }
+  footer h5, footer p {
+    padding-left: 40px; }
+  footer .footer-copyright .container {
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    padding-bottom: 15px;
+    color: #c5c5c5; }
+
+.nav_button {
+  float: right;
+  position: relative;
+  top: 5px;
+  right: -15px; }
+
+@media (max-width: 500px) {
+  nav ul {
+    display: none; } }
+
+@media (min-width: 501px) {
+  nav button {
+    display: none; } }
 
 
