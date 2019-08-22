@@ -335,6 +335,57 @@ main {
     }
 }
 
+.job__block {
+    padding-bottom: 120px;
+    .job_card {
+        width: auto;
+        height: auto;
+        position: relative;
+        margin-bottom: 55px;
+        // border-radius: 5px;
+        // box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+        background-color: rgba(255,255,255, 1   );
+        .img-wrapper {
+            padding: 10px;
+            overflow: hidden;
+        };
+        h2 {
+            font-size: 2rem;
+            padding: 25px 0 0 20px;
+        };
+        p {
+            font-size: 1.1rem;
+            padding: 0px 20px 0px 20px;
+        };
+        .status-box {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            width: 200px;
+            border-radius: 4px;
+            padding: 5px;
+            margin: 0 10px 10px 0px;
+            p {
+                position: relative;
+                color: #5699D2;
+                font-size: 1rem;
+                padding: 15px 0 0 0;
+                width: auto;
+                margin-bottom: 0px;
+            };
+            svg {
+                margin-left: 10px;
+                width: 30%;
+            }
+            .status-box__icon {
+                display: inline-block;
+                position: relative;
+            }
+        }
+        
+    }
+}
+
 
 footer {
     z-index: 100;
