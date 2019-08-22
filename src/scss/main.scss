@@ -220,34 +220,40 @@ video {
     align-items: center;
 }
 
+h1 {
+    
+    padding: 0 15px 0 15px;
+    font-weight: 300;
+    font-size: 2.3rem;
+    line-height: 3rem;
+};
+h2, h3 {
+    padding: 0 15px 0 15px;
+    font-weight: 400;
+    font-size: 2.1rem;
+    line-height: 3rem;
+};
+h4 {
+    font-size: 1.9rem;
+    font-weight: 300 !important;
+};
+p {
+    font-size: 20px;
+    font-weight: 300;
+    font-size: 1rem;
+};
+
+
 .main_container_top {
     z-index: 99;
     position: relative;
     // top: 130px;
+    max-width: 1170px;
     top: 50%;
     transform: translate(0, -50%);
     color: white;
     padding: 0 15px 0 15px;
-    h1, h2, h3 {
-        text-align: left;
-        font-weight: 300;
-        font-size: 2.3rem;
-        line-height: 4rem;
-    };
-    h4 {
-        font-size: 2rem;
-    };
-    p {
-        font-size: 20px;
-        font-weight: 300;
-        font-size: 1rem;
-    };
-    button {
-        position: relative;
-        margin: 0 auto;
-        display: block;
-        margin-top: 40px;
-    }
+    
 }
 
 
@@ -276,7 +282,6 @@ main {
     text-align: center;
     h2 {
         font-size: 2.5rem;
-        color: white;
     }
 }
 .products__block {
@@ -381,6 +386,19 @@ footer {
     right: -15px;
 }
 
+.font_dark {
+    color: black !important;
+}
+.font_light {
+    color: white !important;
+}
+.border_bottom {
+    border-bottom: 1px solid rgba(163, 163, 163, 0.3);
+}
+.container__career .heading {
+    padding: 60px 0 60px 0;
+}
+
 @media (max-width: 500px) {
     nav ul {
         display: none;
@@ -388,7 +406,6 @@ footer {
     .main_container_top {
         z-index: 99;
         position: relative;
-        // top: 130px;
         top: 50%;
         transform: translate(0, -50%);
         color: white;
@@ -396,22 +413,12 @@ footer {
             text-align: left;
             font-weight: 300;
             font-size: 1.9rem;
-            line-height: 4rem;
+            line-height: 3rem;
         };
         h4 {
             font-size: 2rem;
         };
-        p {
-            font-size: 20px;
-            font-weight: 300;
-            font-size: 1rem;
-        };
-        button {
-            position: relative;
-            margin: 0 auto;
-            display: block;
-            margin-top: 40px;
-        }
+        
     }
 }
 
