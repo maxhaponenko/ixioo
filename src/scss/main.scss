@@ -138,8 +138,11 @@ a.learn_more {
     font-size: 1.5rem;
     display: block;
     float: left;
-    margin-top: 17px;
+    margin-top: 12px;
     color: $color-white;
+    img {
+        max-height: 45px;
+    }
 }
 .brand-logo:hover {
     text-decoration: none;
@@ -347,6 +350,7 @@ main {
         background-color: rgba(255,255,255, 1   );
         .img-wrapper {
             padding: 10px;
+            max-width: 200px;
             overflow: hidden;
         };
         h2 {
