@@ -82,7 +82,7 @@ module.exports = {
 	plugins: [
 		new MiniCssExtractPlugin({
 			filename: `${PATHS.assets}css/[name].css`,
-			// publicPath: '../../',
+			publicPath: './../',
 		}),
 		new HtmlWebpackPlugin({
 			hash: false,
@@ -93,6 +93,11 @@ module.exports = {
 			hash: false,
 			template: `${PATHS.src}/career.html`,
 			filename: './career.html'
+		}),
+		new HtmlWebpackPlugin({
+			hash: false,
+			template: `${PATHS.src}/our-team.html`,
+			filename: './our-team.html'
 		}),
 		new CopyWebpackPlugin([
 			{ from: `${PATHS.src}/img`, to: `${PATHS.assets}img` },

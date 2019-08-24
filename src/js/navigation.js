@@ -1,3 +1,5 @@
+const $ = require('jquery');
+
 
 // Выдвигаем или прячем меню
 var moveNavPanel = (id,px) => {
@@ -16,3 +18,6 @@ document.getElementById("navigation_start").addEventListener("click", function()
     } 
 });
 
+$('navigation_close').click(function(){
+    alert('button clicked');
+})

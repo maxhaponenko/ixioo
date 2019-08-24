@@ -1,0 +1,17 @@
+.sprite {
+    background-image: url(/assets/img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-linkedin {
+    width: 64px;
+    height: 64px;
+    background-position: -5px -5px;
+}
+
+.sprite-facebook {
+    width: 64px;
+    height: 64px;
+    background-position: -79px -5px;
+}
