@@ -14,9 +14,34 @@
 </head>
 
 <body>
-  <nav id="nav-header">
-    <div class="nav-wrapper z-depth-3">
-      <div class="container">
+  <div id="mobile_navigation" class="mobile_navigation">
+    <div class="nav_button_mobile">
+      <button class="navbar-toggler collapsed" id="navigation_close">
+        <img src="./assets/img/outline_menu_white_24dp.png" alt="">
+      </button>
+    </div>
+    <div class="wrapper">
+      <div class="nav_container">
+          <ul id="nav-mobile" class="right hide-on-med-and-down waves-light">
+              <li>
+                <a href="./index.html">Home</a>
+              </li>
+              <li>
+                <a href="./career.html">Career</a>
+              </li>
+              <li>
+                <a href="./career.html">Our team</a>
+              </li>
+              <li>
+                <a href="./career.html">Contact us</a>
+              </li>
+            </ul>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar fixed-top">
+    <div class="wrapper">
+      
         <a href="./index.html" class="brand-logo"><img src="./assets/img/logo_new.png"/></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down waves-light">
           <li>
@@ -36,18 +61,17 @@
           </li> -->
         </ul>
         <div class="nav_button">
-          <button class="navbar-toggler collapsed" id="navigation_start" type="button">
+          <button class="navbar-toggler collapsed" id="navigation_start">
             <img src="./assets/img/outline_menu_white_24dp.png" alt="">
           </button>
         </div>
-      </div>
+      
     </div>
   </nav>
   <header class="header_big">
     <div class="container main_container">
       <h1 class="mb-5">AI software provider for <span
           style="font-weight: 500; color: rgba(167,255,235)">accelerating digital transformation</span></h2>
-        <!-- <a class="btn btn-big learn_more" name="action" href="#description">LEARN MORE</a> -->
         <div class="scroll-container">
           <div class="mouse">
             <p>Scroll</p>
@@ -205,25 +229,18 @@
           <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
         </div>
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-          <!-- <h5 class="white-text">Links</h5> -->
           <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Career</a></li>
+            <li><a class="grey-text text-lighten-3" href="/career.html">Career</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">Our team</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">Contact us</a></li>
           </ul>
-
         </div>
-
       </div>
     </div>
     <div class="footer-copyright">
       <div class="wrapper">
-        <div class="container">
-          © 2019 iXiOO all right reserved
-          <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
-        </div>
+        <p>© 2019 iXiOO all right reserved</p> 
       </div>
-
     </div>
   </footer>
 

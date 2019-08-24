@@ -1,17 +1,18 @@
 
-// Выдвигаем или прячем боковое меню
+// Выдвигаем или прячем меню
 var moveNavPanel = (id,px) => {
     var elem = document.getElementById(id);
-    elem.style.left = px;
+    elem.style.top = px;
 };
 
 // Слушатель события + определяем прятать или выдвигать навигационную панель при нажатии
 document.getElementById("navigation_start").addEventListener("click", function() {
-    let elem = document.getElementById("navigation").style.left ;
-    if (elem !== "0px") {
-        moveNavPanel("navigation", "0px");
-    } else {
-        moveNavPanel("navigation", "-310px");
-    }
+    let elem = document.getElementById("mobile_navigation").style.top ;
+    if (elem !== "0vh") {
+        moveNavPanel("mobile_navigation", "0vh");
+        document.getElementById("navigation_close").addEventListener("click", function() {
+            moveNavPanel("mobile_navigation", "-100vh");    
+        })
+    } 
 });
 
