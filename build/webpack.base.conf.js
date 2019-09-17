@@ -20,7 +20,7 @@ module.exports = {
   output: {
     filename: `${PATHS.assets}js/[name].js`,
     path: PATHS.dist,
-    publicPath: '/'
+    // publicPath: '/'
   },
   module: {
     rules: [
@@ -43,7 +43,7 @@ module.exports = {
 					MiniCssExtractPlugin.loader,
 					{
 						loader: 'css-loader',
-						options: { sourceMap: true }
+						options: { sourceMap: true, url: false }
 					}, 
 					{
 						loader: 'postcss-loader',
@@ -62,7 +62,7 @@ module.exports = {
 					MiniCssExtractPlugin.loader,
 					{
 						loader: 'css-loader',
-						options: { sourceMap: true }
+						options: { sourceMap: true, url: false }
 					}, 
 					{
 						loader: 'postcss-loader',
@@ -100,7 +100,8 @@ module.exports = {
 			filename: './our-team.html'
 		}),
 		new CopyWebpackPlugin([
-			{ from: `${PATHS.src}/img`, to: `${PATHS.assets}img` },
+			{ from: `${PATHS.src}/${PATHS.assets}/img`, to: `${PATHS.assets}img` },
+			{ from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts` },
 			{ from: `${PATHS.src}/static`, to: '' }
 		])
 		
